@@ -183,12 +183,12 @@ router.post('/restrict', (req, res) => {
   User.getOneByQuery({ name: user.name }).then((result) => {
     if (result) {
       if (result.password === user.password) {
-        if (result.role.name === 'Diretor(a) de Desenvolvimento' || result.role.name === 'Gerente de Desenvolvimento' || result.role.name === 'Assessor(a) de Desenvolvimento') {
+        if (result.role.name === 'Diretor(a) de Gestão de Pessoas' || result.role.name === 'Assessor(a) de Gestão de Pessoas') {
           req.session.user = {
             role: result.role.name,
             name: result.name,
             id: result._id
-          };      
+          };
           res.redirect('/admin');
         }
         else {

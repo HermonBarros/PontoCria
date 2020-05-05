@@ -1,0 +1,12 @@
+# MongoDB Configuration
+MONGO_USER=admin
+MONGO_PASS=cpejr123
+MONGO_SERVER=ponto-4evoi.gcp.mongodb.net
+MONGO_DATABASE=PontoCria
+MONGO_OPTIONS=retryWrites=false
+
+# E-mail Configuration
+EMAIL_HOST=gmail.com
+EMAIL_PORT=587
+EMAIL_USER=pontoeletronicocomercial@cpejr.com.br
+EMAIL_PASS=NikolasTesla3

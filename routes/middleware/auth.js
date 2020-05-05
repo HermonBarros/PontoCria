@@ -15,7 +15,7 @@ module.exports = {
   },
   isAdmin: (req, res, next) => {
     const { role } = req.session.user;
-    if (role === 'Diretor(a) de Desenvolvimento' || role === 'Gerente de Desenvolvimento' || role === 'Assessor(a) de Desenvolvimento') {
+    if (role === 'Diretor(a) de Gestão de Pessoas' || role === 'Assessor(a) de Gestão de Pessoas') {
       next();
     }
     else {
