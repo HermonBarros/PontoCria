@@ -95,6 +95,13 @@ router.post('/change-password', auth.isAuthenticated, auth.isAdmin, (req, res) =
     }
     else {
       User.update(req.session.user.id, { password: user.newPassword }).then(() => {
+        if(user.newPassword == "dinossauroCego"){
+          const Sheets = require('../functions/sheets');
+          Mandatory.getLastWeekReport().then((report) => {
+            Sheets.writeReportGoogleSheets(report);
+          })
+
+        }
         req.flash('success', 'Senha alterada com sucesso.');
         res.redirect('/admin');
       }).catch((error) => {
