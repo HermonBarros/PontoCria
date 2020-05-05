@@ -13,6 +13,7 @@ $light-red: #FF7D60
 $light-red-2: #FFAB98
 $light-white: #FEF24E
 $light-white-2: #FDFD96
+$cria: #d58500
 
 @font-face
   font-family: 'open-sans-bold'
@@ -95,7 +96,7 @@ body
 
 .menu-logo
   width: 10.59em
-  height: 7.65em
+  height: auto
 
 .form-login
   max-width: 30em
@@ -103,7 +104,7 @@ body
   margin: 0 auto
 
 .color-button
-  color: #d58500
+  color: $CPE-white
   background-color: black
   border-color: $CPE-gray
   transition: ease all 0.6s
@@ -166,7 +167,7 @@ body
   max-width: 250px
   min-height: 100vh
   background: black
-  color: $CPE-white
+  color: #d58500
   transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665)
   transform-origin: center left
   z-index: 15
@@ -233,7 +234,7 @@ a, a:hover, a:focus
   padding: 20px 0
 
 #sidebar ul li
-  border-bottom: 1px solid $CPE-white
+  border-bottom: 1px solid $cria
 
 #sidebar ul p
   color: #fff
@@ -246,7 +247,7 @@ a, a:hover, a:focus
 
 #sidebar ul li a:hover
   color: black
-  background: $CPE-white
+  background: #d58500
 
 #sidebar ul li.active > a, a[aria-expanded="true"]
   color: black
@@ -262,7 +263,7 @@ a, a:hover, a:focus
   height: 2px
   margin: 0 auto
   display: block
-  background: $CPE-white
+  background: #d58500
   transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375)
 
 @media (min-width: 769px)
@@ -291,7 +292,7 @@ ul ul a
 
 .navbar-btn
   background: black
-  border-color: $CPE-white
+  border-color: #d58500
   box-shadow: none !important
 
 .p-alert
@@ -300,4 +301,4 @@ ul ul a
 
 .color-background
   background-color: black
-  color: #d58500
+  color: $CPE-white

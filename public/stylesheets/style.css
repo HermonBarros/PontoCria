@@ -7458,7 +7458,7 @@ body {
 
 .menu-logo {
   width: 10.59em;
-  height: 7.65em; }
+  height: auto; }
 
 .form-login {
   max-width: 30em;
@@ -7466,7 +7466,7 @@ body {
   margin: 0 auto; }
 
 .color-button {
-  color: #d58500;
+  color: #FFFF;
   background-color: black;
   border-color: #020202;
   transition: ease all 0.6s; }
@@ -7529,7 +7529,7 @@ body {
   max-width: 250px;
   min-height: 100vh;
   background: black;
-  color: #FFFF;
+  color: #d58500;
   transition: all 0.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
   transform-origin: center left;
   z-index: 15; }
@@ -7589,7 +7589,7 @@ a, a:hover, a:focus {
   padding: 20px 0; }
 
 #sidebar ul li {
-  border-bottom: 1px solid #FFFF; }
+  border-bottom: 1px solid #d58500; }
 
 #sidebar ul p {
   color: #fff;
@@ -7602,7 +7602,7 @@ a, a:hover, a:focus {
 
 #sidebar ul li a:hover {
   color: black;
-  background: #FFFF; }
+  background: #d58500; }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
   color: black;
@@ -7618,7 +7618,7 @@ a, a:hover, a:focus {
   height: 2px;
   margin: 0 auto;
   display: block;
-  background: #FFFF;
+  background: #d58500;
   transition: all 0.8s cubic-bezier(0.81, -0.33, 0.345, 1.375); }
 
 @media (min-width: 769px) {
@@ -7644,7 +7644,7 @@ ul ul a {
 
 .navbar-btn {
   background: black;
-  border-color: #FFFF;
+  border-color: #d58500;
   box-shadow: none !important; }
 
 .p-alert {
@@ -7652,6 +7652,6 @@ ul ul a {
 
 .color-background {
   background-color: black;
-  color: #d58500; }
+  color: #FFFF; }
 
 /*# sourceMappingURL=style.css.map */
